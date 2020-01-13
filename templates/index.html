@@ -36,6 +36,7 @@
 
     <main>
         {% block content %}
+
         {% for page in paginator.pages %}
         <article class="post">
             {{ post_macros::title(page=page) }}
