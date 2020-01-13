@@ -85,6 +85,15 @@ footer {
   padding: 1.5rem;
 }
 
+.post-footer {
+  margin-top: 3rem;
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 article {
   &.post {
     margin-top: 4rem;

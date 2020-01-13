@@ -14,6 +14,7 @@ Google Chrome Labs project launched [VisBug,](https://github.com/GoogleChromeLab
 ["Private by Design: …"](https://hacks.mozilla.org/2018/11/firefox-sync-privacy/) A post by Mozilla that explain in a comprehensive and illustrated way how they created Firefox Sync. Another compelling reason why I came back using Firefox as my defaulf browser.
 
 <img class="east" src="/images/squoosh-icon.png" width="200px" alt="Squoosh Icon">
+
 [Squoosh](https://squoosh.app/) is an image compression web app that allows you to dive into the advanced options provided by various image compressors.
 
 I am using [Jekyll](https://jekyllrb.com/) as the site generator for Pixeleden. It is simple and reliable to get started with.
