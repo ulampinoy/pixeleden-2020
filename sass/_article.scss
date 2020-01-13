@@ -1,0 +1,10 @@
+article {
+    &.Post {
+        h3 {
+            font-size: 1.6rem;
+        }
+        p {
+            margin: 1rem auto;
+        }
+    }
+}

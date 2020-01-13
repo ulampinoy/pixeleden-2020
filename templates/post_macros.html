@@ -1,0 +1,6 @@
+{% macro title(page) %}
+<p class="post-date">{{ page.date  }}</p>
+<h2 class="post-title">
+    <a href="{{ page.permalink }}">{{ page.title }}</a>
+</h2>
+{% endmacro title %}
