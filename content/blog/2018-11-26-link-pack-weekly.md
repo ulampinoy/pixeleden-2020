@@ -4,7 +4,7 @@ date = 2018-11-26
 description = "The second editon of Link Pack Weekly."
 +++
 
-![Docubyte](images/docubyte-01.jpg)
+![Docubyte](/images/docubyte-01.jpg)
 [Docubyte](https://www.docubyte.com/works/guide-to-computing/) — A visual guide to computing history with  amazing imagery, stunning stylized rendetion of vintage computer hardware.
 
 [PhotoSwipe](http://photoswipe.com), JavaScript gallery, no dependencies.
