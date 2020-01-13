@@ -39,9 +39,6 @@
         {% for page in paginator.pages %}
         <article class="post">
             {{ post_macros::title(page=page) }}
-            <div class="post__summary">
-                {{ page.description | safe }}
-            </div>
             <div class="post-content">
                 {{ page.content | safe }}
             </div>
