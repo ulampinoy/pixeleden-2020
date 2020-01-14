@@ -101,25 +101,36 @@ article {
       margin-bottom: 0.2rem;
     }
   }
+
   a:hover {
     color: #000000;
   }
+
   h1 {
     font-size: 2.2rem;
     font-weight: 600;
     margin: 0;
     letter-spacing: -0.02rem;
   }
+
   h2 {
     font-size: 1.8rem;
     line-height: 1.4;
     font-weight: 600;
   }
+
   h3 {
     font-size: 1.2rem;
     margin-top: 2rem;
     font-weight: 600;
   }
+
+  ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
   img {
     max-width: 100%;
     margin: 0.5rem auto;
@@ -138,6 +149,7 @@ article {
       }
     }
   }
+
   p {
     font-size: 0.9rem;
     margin: 1rem auto 1.5rem;
@@ -163,14 +175,16 @@ article {
       font-weight: 600;
     }
   }
+
   blockquote {
     margin: 0.5rem auto 1rem;
     padding: 0 1rem;
     border-left: 5px solid rgba(147, 10, 21, 0.1);
+
     p {
       font-weight: 300;
       color: rgb(147, 10, 21);
-      font-size: 1.3rem;
+      font-size: 1.12rem;
       line-height: 1.4;
     }
   }

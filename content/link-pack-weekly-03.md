@@ -14,11 +14,9 @@ Gorgeous macro shots of bees. Check out the article by Atlas Obscura —
 Boing-boing's [spoiler summary:](https://boingboing.net/2018/11/27/why-every-company-has-its-own.html) "a mix of corporate vanity and to avoid recurring licensing fees"
 
 [The 100 Best Pens, As Tested by Strategist Editors](http://nymag.com/strategist/article/best-pens-gel-ballpoint-rollerball-felt-fountain.html)
-
 I want 'em all!
 
 [NES.css](https://bcrikko.github.io/NES.css/)
-
 These days I totally dropped frameworks but I will make an exception for this! :P
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ymEhHvxgEr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -31,5 +29,4 @@ Via [rant-dom](https://rant.monkeydom.de/posts/2018/11/28/see-is-back)
 **Feather Icons** – Simply [beautiful open source icons](https://feathericons.com/) that you can use in your projects
 
 [Notion - The all-in-one workspace for your notes, tasks, wikis, and databases.](https://www.notion.so)
-
 Still enjoying using it!
