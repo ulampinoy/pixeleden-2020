@@ -50,6 +50,11 @@ h2 {
 
 p {
   margin: 0.5em 0;
+     font-size: 1.12rem;
+
+   @media screen and (min-width: 760px) {
+     font-size: 1.34rem;
+   }
 }
 
 strong {

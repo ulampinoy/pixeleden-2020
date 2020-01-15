@@ -5,8 +5,7 @@ date = 2020-01-14
 description = "I switch building this site from Jekyll to Zola"
 +++
 
-[Zola](https://www.getzola.org/)
-It is a fast static site generator written in Rust. Like Hugo, it is a single binary with everything built-in.
+[Zola](https://www.getzola.org/) is a fast static site generator written in Rust. Like Hugo, it is a single binary with everything built-in.
 
 As described by [Vincent Prouillet](https://www.vincentprouillet.com), Zola's creator:
 > "Zola is a powerful static site generator (SSG) inspired by Hugo but simpler to use. One of its goals is to try to do as much as possible at built time: anchors, search, Sass, table of contents, syntax highlighting and more."
