@@ -1,25 +1,13 @@
-# The URL the site will be built for
 base_url = "/"
-
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
 generate_rss = false
-
 hard_link_static = true
-
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-
-# Whether to build a search index to be used later on by a JavaScript library
+highlight_theme = "monokai"
 build_search_index = true
 
 # Used in RSS by default
 title = "Pixeleden | A Digital Garden and Journal of Allan Reyes"
-description = "Recent design work of Allan Reyes. A digital product designer based on Madrid, Spain"
+description = "Tech and design blog of Allan Reyes. A digital product designer based on Madrid, Spain"
 # The default language, used in RSS
 default_language = "en"
-
-[extra]
-# Put all your custom variables here
