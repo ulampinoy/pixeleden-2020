@@ -18,9 +18,13 @@ footer > p {
 }
 
 main {
-  max-width: 32rem;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0 2rem;
+
+  @media screen and (min-width: 980px) {
+      max-width: 60%;
+  }
 
   article {
     position: relative;
@@ -74,12 +78,6 @@ header[role="banner"] {
   }
 }
 
-main {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
 footer {
   display: block;
   background-color: rgb(35, 158, 76);
@@ -98,10 +96,13 @@ footer {
 }
 
 article {
+
   &.post {
+    font-size: 1.205em;
     margin-top: 4rem;
+
     .post-date {
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.15rem;
     }
   }
 
@@ -110,14 +111,12 @@ article {
   }
 
   h1 {
-    font-size: 2.4rem;
     font-weight: 600;
     margin: 0;
     letter-spacing: -0.02rem;
   }
 
   h2 {
-    font-size: 2rem;
     line-height: 1.4;
     font-weight: 600;
 
@@ -158,7 +157,6 @@ article {
   }
 
   p {
-    font-size: 0.9rem;
     margin: 1rem auto 1.5rem;
 
     a {
@@ -175,10 +173,10 @@ article {
     }
 
     &.post-date {
-      font-size: 0.6rem;
+      font-size: 0.8rem;
       color: #aaaaaa;
       text-transform: uppercase;
-      letter-spacing: 0.1rem;
+      letter-spacing: 0.08rem;
       font-weight: 600;
     }
   }
@@ -192,7 +190,7 @@ article {
       font-family: Georgia, "Times New Roman", Times, serif;
       font-style: italic;
       color: #555;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
   }
 
