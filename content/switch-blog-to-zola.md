@@ -6,14 +6,14 @@ description = "I switch building this site from Jekyll to Zola"
 +++
 
 [Zola](https://www.getzola.org/)
-It is a fast static site generator written on Rust. Like Hugo, it is a single binary with everything built-in.
+It is a fast static site generator written in Rust. Like Hugo, it is a single binary with everything built-in.
 
 As described by [Vincent Prouillet](https://www.vincentprouillet.com), Zola's creator:
 > "Zola is a powerful static site generator (SSG) inspired by Hugo but simpler to use. One of its goals is to try to do as much as possible at built time: anchors, search, Sass, table of contents, syntax highlighting and more."
 
-Previously, this site was being generated using [Jekyll](https://jekyllrb.com/). From the past 2 years I have some interest learning [Rust](https://www.rust-lang.org/), so I am eager to find a static generator built using Rust and I found Zola.
+Previously, this site was being generated using [Jekyll](https://jekyllrb.com/). For the past 2 years, I have some interest learning [Rust](https://www.rust-lang.org/), so I am eager to find a static generator built using Rust and I found Zola.
 
-Also in the past I used [Hugo](https://gohugo.io/) and still using it for example with my portfolio website. Having a single binary installed in your machine makes running your site generator painless since you don't have to worry on maintaining external dependencies. Everything it needs build the site are all built-in. If there will be a new release, you just [grab the new pre-built binaries](https://www.getzola.org/documentation/getting-started/installation/) or in my case via [Homebrew](https://brew.sh/) on the Mac:
+Also in the past I used [Hugo](https://gohugo.io/) and still using it for example with [my portfolio website](https://allanrey.es). Having a single binary installed in your machine makes running your site generator painless since you don't have to worry on maintaining external dependencies. Everything it needs build the site are all built-in. If there will be a new release, you just [grab the new pre-built binaries](https://www.getzola.org/documentation/getting-started/installation/) or in my case via [Homebrew](https://brew.sh/) on the Mac:
 
 ```bash
 $ brew upgrade zola
@@ -34,7 +34,4 @@ The only thing that made me wrestle with Hugo is the templating language on top.
 - a single binary like Hugo
 - a templating language—[Tera](https://tera.netlify.com/) that I am more comfortable writing since it is like [Liquid](https://shopify.github.io/liquid/) that Jekyll use.
 
-Moving my blog from Jekyll to Zola is breeze. I'll continue with the test drive and perhaps write a post on how I use it.
-
-
-
+Moving my blog from Jekyll to Zola is a breeze. I'll continue with the test drive and perhaps write a post on how I use it.
