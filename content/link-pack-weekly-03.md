@@ -4,7 +4,9 @@ date = 2018-12-03
 description = "The third editon of Link Pack Weekly."
 +++
 
-![Macro photo of bee flying](/images/macro-bee-image.jpg)
+<div class="bannerImage">
+    <img src="/images/macro-bee-image.jpg" alt="Macro photo of bee flying">
+</div>
 
 Gorgeous macro shots of bees. Check out the article by Atlas Obscura —
 [How Close-Up Glamour Shots Are Generating Buzz for Bees](https://www.atlasobscura.com/articles/close-up-photos-of-bees)

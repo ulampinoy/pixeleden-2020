@@ -61,23 +61,28 @@
             <div class="post-content">
                 {{ page.content | safe }}
             </div>
-            <nav class="pagination">
-                {% if paginator.previous %}
-                <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
-                {% endif %}
-                {% if paginator.next %}
-                <a class="next" href="{{ paginator.next }}">See more post ›</a>
-                {% endif %}
-            </nav>
         </article>
         {% endfor %}
-
+        <nav class="pagination">
+            {% if paginator.previous %}
+            <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+            {% endif %}
+            {% if paginator.next %}
+            <a class="next" href="{{ paginator.next }}">See more post ›</a>
+            {% endif %}
+        </nav>
         {% endblock content %}
     </main>
 
     {% block footer %}
     <footer>
-        <p>&copy; 2018 Pixeleden</p>
+        <img src="/images/logo-pixeleden.svg" alt="logo of PixelEden">
+        <p>
+            &copy; 2020 Pixeleden by
+            <a href="https://allanrey.es">Allan Reyes</a>.
+            Dispatched from Madrid, Spain. Hosted by <a href="https://netlify.com">Netlify</a>.
+
+        </p>
     </footer>
     {% endblock footer %}
 
