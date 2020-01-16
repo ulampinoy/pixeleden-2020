@@ -16,12 +16,14 @@ body {
   line-height: 1.6;
   line-break: strict;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   color: #4c6ea8;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease-out;
 
   &:hover,
@@ -31,14 +33,16 @@ a {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.4rem;
+
   @media screen and (min-width: 760px) {
-    font-size: 4.8rem;
+    font-size: 3.2rem;
   }
 }
 
 h2 {
   font-size: 2.2rem;
+
   @media screen and (min-width: 760px) {
     font-size: 3rem;
   }

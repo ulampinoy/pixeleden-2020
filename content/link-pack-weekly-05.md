@@ -4,8 +4,7 @@ date = 2018-12-17
 description = "The fifth editon of Link Pack Weekly."
 +++
 
-[Layout Land](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag/videos)
-Jen Simmons passion is both inspiring and contagious on the future of graphic web design. The YouTube channel contains a ton of useful tutorials and insights. Go check it out.
+[Layout Land](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag/videos) – **Jen Simmons** passion is both inspiring and contagious on the future of graphic web design. The YouTube channel contains a ton of useful tutorials and insights. Go check it out.
 
 ![reMarkable device](/images/remarkable-remarkable-and-marker.jpg)
 [reMarkable](https://remarkable.com/store/reMarkable-and-marker) —
