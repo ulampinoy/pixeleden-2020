@@ -21,7 +21,11 @@ header[role="banner"] {
 
   .logo {
     img {
+      transition: all 0.3s ease-out;
       margin: 0;
+      &:hover {
+        filter: contrast(140%);
+      }
     }
   }
 
@@ -49,7 +53,7 @@ header[role="banner"] {
 
 nav {
   &.pagination {
-    margin: 3rem 1rem;
+    margin: 3rem 2rem;
     padding: 2rem 0;
     border-top: 1px solid #ddd;
 
