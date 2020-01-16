@@ -19,6 +19,8 @@ looks like a promising gallery generator for the photography section of Pixelede
 
 [Pantone chose this 'life-affirming' shade as 2019's Color of the Year](https://boingboing.net/2018/12/08/pantone-chose-this-life-affi.html)
 
+<p>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/v1Mjc4zNfY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 Very satisfying and amazing art restoration work

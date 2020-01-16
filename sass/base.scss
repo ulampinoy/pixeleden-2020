@@ -19,14 +19,14 @@ body {
 }
 
 a {
+  color: #4c6ea8;
   text-decoration: none;
-  color: inherit;
-  font-weight: 700;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
 
   &:hover,
   &:focus {
-    border-bottom: 0.1rem solid rgb(186, 238, 203);
-    transition: color 0.15s, border-bottom-color 0.3s;
+    text-decoration: underline;
   }
 }
 
@@ -48,13 +48,14 @@ h2 {
   }
 }
 
-p {
+p,
+ul {
   margin: 0.5em 0;
-     font-size: 1.12rem;
+  font-size: 1.12rem;
 
-   @media screen and (min-width: 760px) {
-     font-size: 1.34rem;
-   }
+  @media screen and (min-width: 760px) {
+    font-size: 1.34rem;
+  }
 }
 
 strong {
@@ -65,7 +66,7 @@ pre {
   font-family: "Monaco", monospace;
   font-size: 14px;
   padding: 1rem;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem auto;
   overflow: auto;
 }
 

@@ -14,6 +14,7 @@ Previously, this site was being generated using [Jekyll](https://jekyllrb.com/).
 
 Also in the past I used [Hugo](https://gohugo.io/) and still using it for example with [my portfolio website](https://allanrey.es). Having a single binary installed in your machine makes running your site generator painless since you don't have to worry on maintaining external dependencies. Everything it needs build the site are all built-in. If there will be a new release, you just [grab the new pre-built binaries](https://www.getzola.org/documentation/getting-started/installation/) or in my case via [Homebrew](https://brew.sh/) on the Mac:
 
+
 ```bash
 $ brew upgrade zola
 ...
@@ -26,6 +27,7 @@ Removing: /usr/local/Cellar/zola/0.8.0... (10 files, 15.8MB)
 ==> Checking for dependents of upgraded formulae...
 ==> No dependents found!
 ```
+
 **🎉 That's it!** No dependency rabbit-hole, at least for me.
 In some projects, I gave up using Gatsby because when I try to update it or add a plug-in I mostly end up spending more time troubleshooting the collateral damage.
 

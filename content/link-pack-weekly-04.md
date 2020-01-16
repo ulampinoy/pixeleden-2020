@@ -6,7 +6,9 @@ description = "The fourth editon of Link Pack Weekly."
 
 I have such high creative regard to stop-motion animation and the team behind it, and **Isle of Dogs** is so much fun and wow!
 
+<p>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RSKK--p2Nrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 *Unrolling the Masterful Sushi Scene in 'Isle of Dogs'* via [Variety](https://variety.com/video/isle-of-dogs-puppet-master-film-broke-animators/)
 

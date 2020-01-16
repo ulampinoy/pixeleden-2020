@@ -55,20 +55,23 @@
 
         {% for page in paginator.pages %}
         <article class="post">
-            {{ post_macros::title(page=page) }}
+            <header>
+                {{ post_macros::title(page=page) }}
+            </header>
             <div class="post-content">
                 {{ page.content | safe }}
             </div>
+            <nav class="pagination">
+                {% if paginator.previous %}
+                <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+                {% endif %}
+                {% if paginator.next %}
+                <a class="next" href="{{ paginator.next }}">See more post ›</a>
+                {% endif %}
+            </nav>
         </article>
         {% endfor %}
-        <nav class="pagination">
-            {% if paginator.previous %}
-            <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
-            {% endif %}
-            {% if paginator.next %}
-            <a class="next" href="{{ paginator.next }}">Next ›</a>
-            {% endif %}
-        </nav>
+
         {% endblock content %}
     </main>
 
