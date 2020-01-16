@@ -2,7 +2,7 @@ main {
   margin: 0 auto;
 
   @media screen and (min-width: 980px) {
-    max-width: 64%;
+    max-width: 1200px;
   }
 
   article {
@@ -23,6 +23,12 @@ header[role="banner"] {
     img {
       transition: all 0.3s ease-out;
       margin: 0;
+      width: 90%;
+
+      @media screen and (min-width: 768px) {
+        width: 100%;
+      }
+
       &:hover {
         filter: contrast(140%);
       }
@@ -70,7 +76,7 @@ nav {
 footer {
   text-align: center;
   background-color: rgba(35, 158, 76, 0.05);
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 4rem 1.5rem;
 
   img {
@@ -88,7 +94,7 @@ footer {
 
 .post-footer {
   border-top: 1px solid #ddd;
-  margin: 2rem 1.5rem;
+  margin: 2rem;
   padding: 1.5rem 0;
 }
 
@@ -108,40 +114,48 @@ footer {
 article {
   header {
     margin: 0 auto;
-
-    @media screen and (min-width: 768px) {
-      width: 80%;
-    }
-
-    @media screen and (min-width: 980px) {
-      width: 64%;
-    }
   }
 
   .post-content {
+    position: relative;
+
     h2 {
       color: #555555;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
-      margin: 3rem auto 1rem;
+      margin: 3rem 2rem 1rem;
+      width: auto;
+
+      &:first-of-type {
+        margin-top: 1rem;
+      }
 
       @media screen and (min-width: 768px) {
-        width: 80%;
+        font-size: 1.75rem;
+        margin: 2rem auto 1.5rem;
       }
 
       @media screen and (min-width: 980px) {
-        width: 64%;
+        max-width: 1200px;
+        width: 640px;
+        margin: 3rem auto 1.5rem;
       }
     }
     em {
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: Georgia, "Times New Roman", Times, serif;
       font-style: italic;
     }
   }
 
   &.post {
     font-size: 1.205em;
-    margin-top: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+    }
 
     .post-date {
       color: #aaaaaa;
@@ -167,6 +181,7 @@ article {
   h2 {
     line-height: 1.4;
     font-weight: 600;
+    letter-spacing: -0.02rem;
 
     a {
       color: #444;
@@ -187,14 +202,34 @@ article {
 
   p,
   pre,
-  ul {
-    margin: 1.25rem auto 1.75rem;
+  ul,
+  blockquote p {
+    margin: 1.25rem 2rem 1.75rem;
+    width: auto;
 
     @media screen and (min-width: 768px) {
-      width: 80%;
+      margin: 1.25rem 4rem 1.75rem;
     }
+
     @media screen and (min-width: 980px) {
-      width: 64%;
+      max-width: 1200px;
+      width: 640px;
+      margin: 1.25rem auto 1.75rem;
+    }
+  }
+
+  header {
+    margin: 0 2rem 0;
+    width: auto;
+
+    @media screen and (min-width: 768px) {
+      margin: 0rem 4rem 0;
+    }
+
+    @media screen and (min-width: 980px) {
+      max-width: 1200px;
+      width: 640px;
+      margin: 1.25rem auto 1.75rem;
     }
   }
 
@@ -209,15 +244,6 @@ article {
       border-left: 6px solid rgba(35, 158, 76, 0.1);
       padding-left: 1.5rem;
       padding-right: 1rem;
-
-      @media screen and (min-width: 768px) {
-        width: 80%;
-        margin: 0 auto;
-      }
-
-      @media screen and (min-width: 980px) {
-        width: 64%;
-      }
 
       em {
         color: #333;
@@ -241,17 +267,30 @@ article {
 
 img {
   max-width: 100%;
-  margin: 1.25rem auto;
+  margin: 0.5rem auto;
+
+  @media screen and (min-width: 768px) {
+    margin: 1.25rem auto;
+  }
 
   &.east {
-    float: right;
-    padding-left: 2rem;
-    padding-right: 0.5rem;
-    margin: .5rem auto;
+    display: block;
+    @media screen and (min-width: 768px) {
+      float: right;
+      padding-left: 2rem;
+      padding-right: 1rem;
+      margin: 0.5rem 3rem 1rem auto;
+    }
   }
+
   &.west {
     float: left;
     padding-right: 3%;
-    margin: .5rem auto;
+    margin: 0.5rem auto;
   }
+}
+
+.fin {
+  color: #00954d;
+  font-size: 2rem;
 }

@@ -4,6 +4,12 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-246916-5"></script>
     <script>
@@ -13,12 +19,6 @@
 
         gtag('config', 'UA-246916-5');
     </script>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
@@ -60,6 +60,7 @@
             </header>
             <div class="post-content">
                 {{ page.content | safe }}
+                <p class="fin">&#10046;</p>
             </div>
         </article>
         {% endfor %}
@@ -82,7 +83,7 @@
         <p>
             &copy; 2020 Pixeleden by
             <a href="https://allanrey.es">Allan Reyes</a>.
-            Dispatched from Madrid, Spain. Hosted by <a href="https://netlify.com">Netlify</a>.
+            Dispatched from <b>Madrid, Spain.</b> Hosted by <a href="https://netlify.com">Netlify</a>.
 
         </p>
     </footer>
