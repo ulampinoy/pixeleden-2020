@@ -2,8 +2,7 @@ main {
   margin: 0 auto;
 
   @media screen and (min-width: 980px) {
-    max-width: 60%;
-    padding: 0 1rem;
+    max-width: 64%;
   }
 
   article {
@@ -50,8 +49,8 @@ header[role="banner"] {
 
 nav {
   &.pagination {
-    margin: 3rem auto;
-    padding-top: 2rem;
+    margin: 3rem 1rem;
+    padding: 2rem 0;
     border-top: 1px solid #ddd;
 
     a {
@@ -227,6 +226,12 @@ article {
     h2 {
       margin-top: 0;
     }
+  }
+}
+
+.bannerImage {
+  img {
+    width: 100%;
   }
 }
 
