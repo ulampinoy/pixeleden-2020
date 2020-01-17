@@ -88,7 +88,9 @@ footer {
 
   p {
     color: #666;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: .02rem;
   }
 }
 
@@ -203,7 +205,8 @@ article {
   p,
   pre,
   ul,
-  blockquote p {
+  blockquote p,
+  figcaption {
     margin: 1.25rem 2rem 1.75rem;
     width: auto;
 
@@ -260,8 +263,45 @@ article {
 }
 
 .bannerImage {
+
+  &.kalye {
+    border-left: 1px solid #999;
+  }
+
   img {
     width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  figcaption {
+    margin-top: 0;
+    border-left: 4px solid #dddddd;
+    padding-left: 2rem;
+
+    p {
+      color: #777;
+      letter-spacing: -0.02rem;
+      margin: 0 0 0.5rem;
+      padding-left: 0;
+
+      &.caption {
+        font-family: "PT Sans Caption", sans-serif;
+        font-weight: 700;
+      }
+
+      &.postdate {
+        font-size: 0.88rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  blockquote {
+    margin-top: 1rem;
+    p {
+      border-left: 0;
+      font-size: 1rem;
+    }
   }
 }
 
