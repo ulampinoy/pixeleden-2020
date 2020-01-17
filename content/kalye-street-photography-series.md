@@ -4,7 +4,7 @@ date = 2020-01-17
 description = "I am moving my street photograph here at it's new home at PixelEden"
 +++
 
-On this photo series I will share my passion for street photography. I have a Tumblr and since I have rebuilt Pixeleden I will move all the photographs here as its new home.
+On this photo series I will be sharing my **passion for street photography.** I have a Tumblr but since I have rebuilt PixelEden, I will be moving all the photographs here as its new home and keeping its respective original post date and caption text. Here are the very first three photographs:
 
 <div class="bannerImage">
     <figure>
