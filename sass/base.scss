@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans:400,400i,700,700i|PT+Serif:400i,700i&display=swap');
 @import "reset.scss";
 @import "layout.scss";
 @import "article.scss";
@@ -7,13 +8,13 @@ html {
 }
 
 body {
-  font-family: "Lucida Grande", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  font-family: "PT Sans", "Lucida Grande", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
   font-weight: 400;
   color: #222;
   background-color: #f9f9fa;
-  line-height: 1.6;
+  line-height: 1.5;
   line-break: strict;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,6 +31,10 @@ a {
   &:focus {
     text-decoration: underline;
   }
+}
+
+h1, h2, h3, h4 {
+  font-family: "PT Sans Caption", sans-serif;
 }
 
 h1 {
