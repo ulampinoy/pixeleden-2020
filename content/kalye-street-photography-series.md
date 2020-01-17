@@ -1,5 +1,5 @@
 +++
-title = "Kalye — A Street Photograph Series"
+title = "KALYE — A Street Photography Series"
 date = 2020-01-17
 description = "I am moving my street photograph here at it's new home at PixelEden"
 +++
@@ -20,7 +20,7 @@ On this photo series I will share my passion for street photography. I have a Tu
     <figure>
         <img src="/images/kalye/suduko-san.jpg" alt="A photograph of a man seated in a Metro train solving a Suduko puzzle on a newspaper.">
         <figcaption>
-        <p class="caption">We’re open (Abierto)… well, almost</p>
+        <p class="caption">Sudoku-san</p>
         <p class="postdate">04 June 2012</p>
         <blockquote>
     <p>After ‘surviving a Monday’ (which a lot of people say a lot every Monday, not sure why they complain about Mondays)
@@ -30,6 +30,7 @@ On this photo series I will share my passion for street photography. I have a Tu
 Or perhaps just passing time while passing by Metro stations. He looked tired but seems happy. I guess he likes Monday or even Tuesday…
 
 I’ll pass with the Sudoku but will press the shutter instead – that is my game.
+
 </p>
     </blockquote>
         </figcaption>
@@ -46,4 +47,4 @@ I’ll pass with the Sudoku but will press the shutter instead – that is my ga
     </figure>
 </div>
 
-I will repost all the photos from Tumblr and will continue to post on this series some recent photographs I made and to keep me motivated to shoot.
+I will repost all the photos from Tumblr and will continue to post on this series some recent photographs I made and to keep me continually motivated to shoot.
