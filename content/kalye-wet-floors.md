@@ -1,7 +1,7 @@
 +++
 title = "KALYE: Wet Floors"
 date = 2020-01-19
-description = "I am moving my street photograph here at it's new home at PixelEden"
+description = "Protect your livelihood while finding joy in doing it"
 +++
 
 <div class="bannerImage kalye">

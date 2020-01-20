@@ -1,0 +1,18 @@
+<div {% if class %}class="bannerImage {{class}}" {% endif %}>
+    <figure>
+        <img
+        src="/images/kalye/{{img}}.jpg"
+        alt="{% if alt %}{{imgDesc}}{% endif %}">
+        <figcaption>
+            <p class="caption">{{imgCaption}}</p>
+            <p class="postdate">{{imgDate}}</p>
+            {% if quote %}
+            <blockquote>
+                <p>
+                    {{imgQuote}}
+                </p>
+            </blockquote>
+            {% endif %}
+        </figcaption>
+    </figure>
+</div>
