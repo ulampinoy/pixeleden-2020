@@ -121,6 +121,10 @@ article {
   .post-content {
     position: relative;
 
+    li {
+      margin-bottom: .25rem;
+    }
+
     h2 {
       color: #555555;
       font-size: 1.5rem;

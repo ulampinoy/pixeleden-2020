@@ -1,7 +1,6 @@
 base_url = "/"
 compile_sass = true
 generate_rss = true
-hard_link_static = true
 highlight_code = true
 highlight_theme = "charcoal"
 build_search_index = true

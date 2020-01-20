@@ -54,12 +54,12 @@
         {% block content %}
 
         {% for page in paginator.pages %}
-        <article class="post">
+        <article class="post card">
             <header>
                 {{ post_macros::title(page=page) }}
             </header>
             <div class="post-content">
-                {{ page.content | safe }}
+                <p>{{ page.content | safe }}</p>
                 <p class="fin">&#10046;</p>
             </div>
         </article>

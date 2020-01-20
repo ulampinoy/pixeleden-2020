@@ -1,23 +1,24 @@
 +++
 title = "How to Make Shortcodes in Zola"
 date = 2020-01-20
-description = "Shortcodes are a nifty way of inserting a block of formated block into your Markdown"
+description = "Shortcodes is a nifty feature that provides a tidy way to insert messy HTML blocks such as video embeds and content blocks that require some specific visual presentation."
 +++
 
-I am enjoying rebuilding the site with Zola so far and as I mentioned previously, I'm currently moving my street photographs from its Tumblr.
+I am enjoying rebuilding the site with [Zola](https://www.getzola.org/) so far and as I mentioned previously, I'm currently moving my street photographs from its Tumblr.
+
 These reposts have a certain structure to it:
 
 - The photograph
 - Text for the `alt` attribute
 - Image caption
 - Post date
-- Description as supplementary text (optiona)
+- Description as supplementary text (optional)
 
-So I thought `shortcodes` fit the bill for this kind of content block. I used [shortcodes in Hugo](https://gohugo.io/content-management/shortcodes/) before to embed YouTube videos in [our food blog](https://ulampinoy.com), and glad that [Zola has shortcodes]((https://www.getzola.org/documentation/content/shortcodes/)) feature too. Very cool!
-
-
+So I thought `shortcodes` fit the bill for this kind of content block. I used [shortcodes in Hugo](https://gohugo.io/content-management/shortcodes/) before to embed YouTube videos in [our food blog](https://ulampinoy.com), and I'm glad that **Zola has shortcodes** feature too. Very cool!
 
 ## Creating the Shortcode
+
+Zola provided some [clear instructions](https://www.getzola.org/documentation/content/shortcodes/) on how to implement the shortcode feature which I followed closely.
 
 - Make a new HTML file in the `template/shortcodes/` directory.
 - Start with a regular HTML block. In my case, I grabbed the block from a recent post and paste it on the newly created `bannerImage.html`:
@@ -80,7 +81,7 @@ And now, this is how I use the shortcode for the Tumblr repost in Markdown:
 
 It's tidier than just dropping the HTML block in Markdown.
 
-Since I'm on it, I also customized the built-in **shortcode for YouTube videos** to accept two arguments such as the `id` and an optional selector `class`:
+I also customized the built-in **shortcode for YouTube videos** to accept two arguments such as the `id` and an optional selector `class`:
 
 ```jinja2
 <div {% if class %}class="{{class}}" {% endif %}>
@@ -94,3 +95,10 @@ Since I'm on it, I also customized the built-in **shortcode for YouTube videos**
     </iframe>
 </div>
 ```
+
+**Shortcodes is a neat feature** if you create your posts directly in Markdown, at least offering a tidy way to include messy HTML blocks such as video embeds and content blocks that require some specific visual presentation.
+
+<div class="bannerImage">
+    <img src="/images/photo-computer-monitor-code-editor.jpg" alt="Photo of a computer monitor showing a browser and code editor">
+</div>
+
