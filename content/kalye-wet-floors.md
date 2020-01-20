@@ -12,9 +12,8 @@ description = "Protect your livelihood while finding joy in doing it"
             <p class="postdate">05 June 2012</p>
             <blockquote>
                 <p>She would yell to anyone approaching the “wet floor” zone. Oh yeah, she did yell at me not to step in to the zone.
-
-                She then afterwards dried the floor by hands – using the “wet floor” sign.
                 </p>
+                <p>She then afterwards dried the floor by hands – using the “wet floor” sign.</p>
             </blockquote>
         </figcaption>
     </figure>
