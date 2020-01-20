@@ -4,7 +4,7 @@ date = 2020-01-20
 description = "Shortcodes is a nifty feature that provides a tidy way to insert messy HTML blocks such as video embeds and content blocks that require some specific visual presentation."
 +++
 
-I am enjoying rebuilding the site with [Zola](https://www.getzola.org/) so far and as I mentioned previously, I'm currently moving my street photographs from its Tumblr.
+I am enjoying rebuilding the site with [Zola](https://www.getzola.org/) so far and as I mentioned previously, I'm currently moving all of my street photographs from its Tumblr.
 
 These reposts have a certain structure to it:
 
@@ -45,7 +45,7 @@ Zola provided some [clear instructions](https://www.getzola.org/documentation/co
     - `{{ imgDesc }}`
     - `{{ imgCaption }}`
     - `{{ imgDate }}`
-    - `{{ imgQuote }}` this is an optional entry
+    - `{{ imgQuote }}` <- this is an optional entry
 
 ```html
 <div class="bannerImage kalye">
