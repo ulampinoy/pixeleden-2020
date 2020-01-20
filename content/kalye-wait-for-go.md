@@ -5,7 +5,6 @@ description = "A group of women waiting for the go sign to cross the street."
 +++
 
 {{ bannerImage(
-    class="kalye"
     img="wait-for-go"
     imgDesc="A group of women waiting for the go sign to cross the street"
     imgCaption="While waiting for the go"

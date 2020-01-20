@@ -125,12 +125,9 @@ article {
       color: #555555;
       font-size: 1.5rem;
       text-transform: uppercase;
+      letter-spacing: unset;
       margin: 3rem 2rem 1rem;
       width: auto;
-
-      &:first-of-type {
-        margin-top: 1rem;
-      }
 
       @media screen and (min-width: 768px) {
         font-size: 1.75rem;
@@ -197,15 +194,16 @@ article {
 
   ul {
     list-style-type: disc;
-    padding-left: 1.5rem;
     margin-bottom: 1.75rem;
   }
 
   p,
   pre,
   ul,
+  ol,
   blockquote p,
-  figcaption {
+  figcaption,
+  .video {
     margin: 1.25rem 2rem 1.75rem;
     width: auto;
 
@@ -327,6 +325,12 @@ img {
     float: left;
     padding-right: 3%;
     margin: 0.5rem auto;
+  }
+}
+
+.video {
+  iframe {
+    min-height: 315px;
   }
 }
 

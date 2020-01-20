@@ -30,7 +30,6 @@ On this photo series I will be sharing my **passion for street photography.** I 
 Or perhaps just passing time while passing by Metro stations. He looked tired but seems happy. I guess he likes Monday or even Tuesday…
 
 I’ll pass with the Sudoku but will press the shutter instead – that is my game.
-
 </p>
     </blockquote>
         </figcaption>

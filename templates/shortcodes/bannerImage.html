@@ -1,15 +1,15 @@
-<div {% if class %}class="bannerImage {{class}}" {% endif %}>
+<div class="bannerImage kalye">
     <figure>
         <img
-        src="/images/kalye/{{img}}.jpg"
-        alt="{% if alt %}{{imgDesc}}{% endif %}">
+        src="/images/kalye/{{ img }}.jpg"
+        alt="{% if alt %}{{ imgDesc }}{% endif %}">
         <figcaption>
-            <p class="caption">{{imgCaption}}</p>
-            <p class="postdate">{{imgDate}}</p>
+            <p class="caption">{{ imgCaption }}</p>
+            <p class="postdate">{{ imgDate }}</p>
             {% if quote %}
             <blockquote>
                 <p>
-                    {{imgQuote}}
+                    {{ imgQuote }}
                 </p>
             </blockquote>
             {% endif %}
