@@ -199,6 +199,11 @@ article {
   ul {
     list-style-type: disc;
     margin-bottom: 1.75rem;
+
+    ul {
+      margin-left: 1rem;
+      list-style-type: circle;
+    }
   }
 
   p,

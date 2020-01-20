@@ -41,11 +41,11 @@ Zola provided some [clear instructions](https://www.getzola.org/documentation/co
 </div>
 ```
 - I then replaced the literal contents with these template variables:
-1. `{{ img }}`
-2. `{{ imgDesc }}`
-3. `{{ imgCaption }}`
-4. `{{ imgDate }}`
-5. `{{ imgQuote }}` this is an optional entry
+    - `{{ img }}`
+    - `{{ imgDesc }}`
+    - `{{ imgCaption }}`
+    - `{{ imgDate }}`
+    - `{{ imgQuote }}` this is an optional entry
 
 ```html
 <div class="bannerImage kalye">
