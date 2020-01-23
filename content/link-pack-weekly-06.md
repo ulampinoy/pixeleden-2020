@@ -26,6 +26,6 @@ description = "The sixth editon of Link Pack Weekly."
 
 How to make: [Infinite Repeating Dashed Lines in SVG](https://www.maxmin.io/2019/01/21/Infinite-Repeating-Dashed-Lines-in-SVG/)
 
-![Animated dashed lines](images/animated_lines.svg)
+![Animated dashed lines](/images/animated_lines.svg)
 
 [Tracking Users with CSS](https://www.templarbit.com/blog/2018/03/20/tracking-users-with-css/) — a post by **Mikey Wills** ([Templarbit](https://www.templarbit.com)) showing how the ubiquitous CSS can be used to track users and offered some advice on how to protect yourself from XSS attacks and CSS leaks.
