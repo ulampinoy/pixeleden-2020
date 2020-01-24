@@ -5,7 +5,7 @@ description = "The seventh editon of Link Pack Weekly."
 +++
 
 <div class="bannerImage">
-    <img src="images/photo-lego-model-iss.jpg" alt="Photograph of Lego toy model of the International Space Station">
+    <img src="/images/photo-lego-model-iss.jpg" alt="Photograph of Lego toy model of the International Space Station">
 </div>
 
 Lego is launching an [ISS toy model](http://www.collectspace.com/news/news-012120a-lego-international-space-station.html). Coolness!
