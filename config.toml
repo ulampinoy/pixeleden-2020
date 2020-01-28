@@ -1,4 +1,4 @@
-base_url = "/"
+base_url = "pixeleden.com"
 compile_sass = true
 generate_rss = true
 highlight_code = true
@@ -10,3 +10,6 @@ title = "Pixeleden | A Digital Garden and Journal of Allan Reyes"
 description = "Tech and design blog of Allan Reyes. A digital product designer based on Madrid, Spain"
 # The default language, used in RSS
 default_language = "en"
+
+generate_categories_pages = true
+generate_tags_pages = true

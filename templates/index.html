@@ -54,15 +54,23 @@
         {% block content %}
 
         {% for page in paginator.pages %}
-        <article class="post card">
-            <header>
-                {{ post_macros::title(page=page) }}
-            </header>
-            <div class="post-content">
-                <p>{{ page.content | safe }}</p>
-                <p class="fin">&#10046;</p>
+        <div class="post card">
+            {% if page.extra.cover_image %}
+            <div class="cover">
+                <a href="{{ page.permalink }}">
+                    <img src="/{{ page.slug }}/{{ page.extra.cover_image }}" alt="{{ page.extra.alt_text }}">
+                </a>
             </div>
-        </article>
+            {% endif %}
+            <div class="blurb">
+                {{ post_macros::title(page=page) }}
+                <div class="summary">
+                    <p>{{ page.description | safe }}
+                        <p class="fin">&#10046;</p>
+                </div>
+            </div>
+
+        </div>
         {% endfor %}
         <nav class="pagination">
             {% if paginator.previous %}
