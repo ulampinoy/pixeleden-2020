@@ -1,4 +1,4 @@
-base_url = "pixeleden.com"
+base_url = "/"
 compile_sass = true
 generate_rss = true
 highlight_code = true
