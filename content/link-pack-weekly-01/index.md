@@ -1,13 +1,13 @@
 +++
 title = "Link Pack Weekly #1"
 date = 2018-11-16
-description = "This is the first post for Link Pack Weekly series! Is a collection of the week's interesting and useful stuff I found or stumbled upon the Internet."
+description = "The first post for Link Pack Weekly series — a collection of the week's interesting and useful stuff I found or stumbled upon the Internet. And yes, I made those soft creamy fried eggs while releasing this post."
 [extra]
 cover_image = "soft-scrambled-eggs.jpg"
 alt_text = "Photo scrambled eggs in a skillet pan"
 +++
 
-This is the first post for **Link Pack Weekly!** It is a collection of the week's interesting and useful stuff I've found or stumbled upon the Internet.
+This is the first post for **Link Pack Weekly!** It is *a collection of the week's interesting and useful stuff I've found* or stumbled upon the Internet.
 
 ![Cloudflare DNS](cloudflare-1111.png)
 

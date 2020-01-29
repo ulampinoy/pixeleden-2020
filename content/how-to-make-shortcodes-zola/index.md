@@ -1,7 +1,7 @@
 +++
 title = "How to Make Shortcodes in Zola"
 date = 2020-01-20
-description = "Shortcodes is a nifty feature that provides a tidy way to insert messy HTML blocks such as video embeds and content blocks that require some specific visual presentation."
+description = "Shortcodes is a nifty feature that provides a tidy way to insert messy HTML blocks such as video embeds and content blocks that require some specific visual presentation..."
 [extra]
 cover_image = "photo-computer-monitor-code-editor.jpg"
 alt_text = "Photo of a computer monitor showing a browser and code editor"

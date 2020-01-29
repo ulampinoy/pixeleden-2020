@@ -1,10 +1,10 @@
 +++
 title = "Switching to Zola"
 date = 2020-01-14
-description = "I switch building this site from Jekyll to Zola"
+description = "I am switching from Jekyll to Zola as the site generator for Pixeleden. Looks like Zola offers the best of both world: build speed and ease of templating..."
 [extra]
 cover_image = "zola-cezanne.png"
-alt_text = "Photograph by Vivian Maier of two women on the sides of the frame are out of focus and looking at the camera. People stand in between their faces."
+alt_text = "Painting by Cezanne: 'Paul Alexis Reading to Émile Zola,' 1869–1870, São Paulo Museum of Art."
 +++
 
 [Zola](https://www.getzola.org/) is a fast static site generator written in Rust. Like Hugo, it is a single binary with everything built-in.

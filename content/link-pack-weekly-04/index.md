@@ -1,7 +1,7 @@
 +++
 title = "Link Pack Weekly #4"
 date = 2018-12-10
-description = "The fourth editon of Link Pack Weekly."
+description = "Featured: Isle of Dogs sushi scene, food advertisement tricks, the font your optician use for glass prescription tests, and more..."
 [extra]
 cover_image = "sushi-1.jpg"
 alt_text = "Isle of dog sushi master scene"

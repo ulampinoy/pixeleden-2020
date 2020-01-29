@@ -1,7 +1,7 @@
 +++
 title = "Link Pack Weekly #8"
 date = 2020-01-27
-description = "MacDown, Saul Bass logo design lifespan, asciinema to record your Terminal sessions, restored archive of Geocities sites, Seiko 7S26 DIY reference"
+description = "MacDown, Saul Bass logo design lifespan, asciinema to record your Terminal sessions, restored archive of Geocities sites, Seiko 7S26 DIY reference, and more..."
 [extra]
 cover_image = "seiko5-leather-nato.jpg"
 alt_text = "Seiko 5 field watch on leather NATO strap"

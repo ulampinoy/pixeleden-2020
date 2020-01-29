@@ -1,7 +1,7 @@
 +++
 title = "Link Pack Weekly #6"
 date = 2020-01-16
-description = "The sixth editon of Link Pack Weekly."
+description = "Featured: Vivian Maier works in color, MagicaVoxel — 8-bit voxel art editor/GPU, learn about Dark Patterns in websites, how CSS can be used for user tracking, and more..."
 [extra]
 cover_image = "scott-maier15.jpg"
 alt_text = "Photograph by Vivian Maier of two women on the sides of the frame are out of focus and looking at the camera. People stand in between their faces."

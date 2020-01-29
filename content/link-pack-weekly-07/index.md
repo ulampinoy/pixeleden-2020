@@ -1,7 +1,7 @@
 +++
 title = "Link Pack Weekly #7"
 date = 2020-01-23
-description = "Lego ISS, JetBrains Mono font, Neon to generate art piece using 2D vector field, well illustrated post on CSS cascade, AWK, Taal volcano eruption"
+description = "Lego ISS, JetBrains Mono font, Neon to generate art piece using 2D vector field, well illustrated post on CSS cascade, AWK, Taal volcano eruption..."
 [extra]
     cover_image = "photo-lego-model-iss.jpg"
     alt_text = "Lego toy model of the ISS"
