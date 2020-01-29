@@ -3,7 +3,7 @@ main {
 
   @media screen and (min-width: 980px) {
     max-width: 1200px;
-    width: 90%;
+    width: 72%;
   }
 
   article {
@@ -65,7 +65,8 @@ nav {
     border-top: 1px solid #ddd;
 
     @media screen and (min-width: 768px) {
-      padding: 2rem;
+      padding: 0 1rem;
+      border-top: 0;
     }
 
     a {
@@ -108,13 +109,19 @@ footer {
 .post-nav {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding-top: 1rem;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 
   a {
     font-size: 1.15rem;
     background-color: rgba(76, 110, 168, 0.05);
     border: 1px solid #e4e4e4;
     padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -369,13 +376,52 @@ img {
 
   &.card {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
     max-width: 1200px;
     margin: 2rem auto;
 
+    &:first-child {
+      margin-top: 0;
+
+      @media screen and (min-width: 768px) {
+        margin: 2rem auto 0;
+      }
+
+      img {
+        margin-top: 0;
+      }
+    }
+
     @media screen and (min-width: 768px) {
       grid-template-columns: minmax(300px, 320px) 1fr;
-      grid-gap: 1.5rem;
+      grid-gap: 1rem;
       width: 100%;
+
+      &:nth-child(even) {
+        grid-template-columns: 1fr minmax(360px, 400px);
+        background-color: #f4f4f4;
+        padding: 1rem 0;
+
+        @media screen and (min-width: 960px) {
+          background-color: transparent;
+          border-top: 4px solid #f0f0f0;
+          border-bottom: 4px solid #f0f0f0;
+        }
+
+        .blurb {
+          grid-column: 1/2;
+          grid-row-start: 1;
+          text-align: right;
+          padding-right: 0;
+          padding-left: 2rem;
+        }
+
+        .cover {
+          grid-column: 2/3;
+          padding-right: 2rem;
+        }
+      }
     }
 
     .cover {
@@ -383,15 +429,16 @@ img {
 
       @media screen and (min-width: 768px) {
         padding-left: 2rem;
-      }
 
-      img {
-        margin-top: .5rem;
+        img {
+          margin-top: 0.8rem;
+        }
       }
     }
 
     .blurb {
-      padding: .5rem 2rem;
+      padding: 0.5rem 2rem 0.5rem 1rem;
+
       @media screen and (min-width: 768px) {
         padding-right: 2rem;
       }
@@ -421,6 +468,7 @@ img {
         &.fin {
           font-size: 1.5rem;
           color: #00954d;
+          margin-bottom: 0;
         }
       }
     }
