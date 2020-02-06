@@ -53,6 +53,12 @@
     <main>
         {% block content %}
 
+        {% for photos in section.pages %}
+        <h2 class="post-title">
+            <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </h2>
+        {% endfor %}
+
         {% for page in paginator.pages %}
         <div class="post card">
             {% if page.extra.cover_image %}

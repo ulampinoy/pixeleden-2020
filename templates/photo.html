@@ -1,0 +1,13 @@
+{% extends "photos.html" %}
+
+{% block title %}{{ page.title }} | Zola {% endblock title %}
+{% block photo_content %}
+<div class="photo-info">
+    <img src="" class="thumb">
+    <div class="metadata">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+    </div>
+</div>
+{{page.content | safe}}
+{% endblock photo_content %}
