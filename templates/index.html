@@ -50,14 +50,8 @@
         </nav>
     </header>
 
+    {% block content %}
     <main>
-        {% block content %}
-
-        {% for photos in section.pages %}
-        <h2 class="post-title">
-            <a href="{{ page.permalink }}">{{ page.title }}</a>
-        </h2>
-        {% endfor %}
 
         {% for page in paginator.pages %}
         <div class="post card">
@@ -75,7 +69,6 @@
                         <p class="fin">&#10046;</p>
                 </div>
             </div>
-
         </div>
         {% endfor %}
         <nav class="pagination">
@@ -86,8 +79,8 @@
             <a class="next" href="{{ paginator.next }}">See more post ›</a>
             {% endif %}
         </nav>
-        {% endblock content %}
     </main>
+    {% endblock content %}
 
     {% block footer %}
     <footer>

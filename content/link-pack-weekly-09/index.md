@@ -2,16 +2,21 @@
 title = "Link Pack Weekly #9"
 date = 2020-02-06
 description = "Wonderful butterfly wings, CSS old and new, Ascii to SVG editor, color blindness, coronavirus, a decade of hack and more..."
+template = "litrato.html"
 [extra]
 cover_image = "photo-butterfly-wings-temp-distro.jpg"
 alt_text = "Photo of butterfly wing and thermal scans indicating temperature distribution"
 +++
 
-![Temperature distributions on the forewing of three species of Eumaeini butterflies illuminated by sunlight, showing that despite the wings' wide variation in visible coloration and pattern, the temperature of the scent patches, pads, and wing veins that contain living cells is always lower than that of the remaining "non-living" parts of the wings. Credit: Nanfang Yu and Cheng-Chia Tsai/Columbia Engineering](https://scx1.b-cdn.net/csz/news/800/2020/1-beatingthehe.jpg)
-Credit: Nanfang Yu and Cheng-Chia Tsai/Columbia Engineering
-
 [Beating the heat in the living wings of butterflies](https://phys.org/news/2020-01-wings-butterflies.html),
 > A new study from Columbia Engineering and Harvard identified the critical physiological importance of suitable temperatures for butterfly wings to function properly, and discovered that the insects exquisitely regulate their wing temperatures through both structural and behavioral adaptations.
+
+{{ wideImage(
+    img="photo-butterfly-wings-temp-distro"
+    imgDesc="Photo of butterfly wing and thermal scans indicating temperature distribution"
+)}}
+
+> Temperature distributions on the forewing of three species of Eumaeini butterflies illuminated by sunlight, showing that despite the wings' wide variation in visible coloration and pattern, the temperature of the scent patches, pads, and wing veins that contain living cells is always lower than that of the remaining "non-living" parts of the wings. Credit: Nanfang Yu and Cheng-Chia Tsai/Columbia Engineering
 
 [Old CSS, new CSS](https://eev.ee/blog/2020/02/01/old-css-new-css/)
 > I first got into web design/development in the late 90s, and only as I type this sentence do I realize how long ago that was.
@@ -34,6 +39,3 @@ Credit: Nanfang Yu and Cheng-Chia Tsai/Columbia Engineering
 **Why 02/02/20 is the most palindromic date ever!** — via [Boing Boing](https://boingboing.net/2020/02/02/why-02-02-20-is-the-most-palin.html)
 
 {{ youtube(id="4fE_sXZjxng", class="video")}}
-
-
-

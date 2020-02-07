@@ -237,6 +237,11 @@ footer {
   blockquote {
     margin: 0.5rem auto 1rem;
 
+    @media screen and (min-width: 980px) {
+      max-width: 1200px;
+      width: 640px;
+    }
+
     p {
       font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
       font-style: italic;
