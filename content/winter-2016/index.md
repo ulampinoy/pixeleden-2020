@@ -15,7 +15,6 @@ In the city of Madrid, snow is a rare thing but to experience snow it is just on
     imgDesc="Photo of frozen forest"
 )}}
 
-
 ![](winter-2016-pine-tree-bark.jpg)
 
 ![](winter-pine-tree-snow-ground.jpg)
@@ -23,7 +22,8 @@ In the city of Madrid, snow is a rare thing but to experience snow it is just on
 {{ wideImage(
     img="winter-pathway-pine-frozen"
     imgDesc="Photo of frozen forest"
-)}}
+    )
+}}
 
 ![](winter-gradient-dusk-sky.jpg)
 

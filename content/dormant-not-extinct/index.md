@@ -10,7 +10,7 @@ alt_text = "Monstera plant in a pot"
 It's so nice to be back again! Idle no more because today I am clearing the weeds and get it up running and live again.
 
 <div class="bannerImage">
-    <img src="/images/madrid-real-botanical-garden-monstera.jpg" alt="Monstera plants in Madrid's Real Botanical Garden" >
+    <img src="madrid-real-botanical-garden-monstera.jpg" alt="Monstera plants in Madrid's Real Botanical Garden" >
 </div>
 
 ## Web garden and online journal
