@@ -1,9 +1,8 @@
 main {
   margin: 0 auto;
 
-  @media screen and (min-width: 980px) {
-    max-width: 1200px;
-    width: 72%;
+  @media screen and (min-width: 768px) {
+    max-width: 920px;
   }
 
   article {
@@ -126,6 +125,10 @@ footer {
 }
 
 .post {
+  a {
+    font-weight: 700;
+  }
+
   header {
     margin: 0 auto;
   }
@@ -152,13 +155,19 @@ footer {
 
       @media screen and (min-width: 980px) {
         max-width: 1200px;
-        width: 640px;
+        width: 720px;
         margin: 3rem auto 1.5rem;
       }
     }
     em {
-      font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
       font-style: italic;
+    }
+    p {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    blockquote p {
+      margin: 0;
     }
   }
 
@@ -174,7 +183,7 @@ footer {
 
   h2 {
     line-height: 1.4;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: -0.08rem;
 
     a {
@@ -185,7 +194,7 @@ footer {
   h3 {
     font-size: 1.2rem;
     margin-top: 2rem;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   ul {
@@ -202,7 +211,7 @@ footer {
   pre,
   ul,
   ol,
-  blockquote p,
+  blockquote,
   figcaption,
   .video {
     margin: 1.25rem 2rem 1.75rem;
@@ -214,7 +223,7 @@ footer {
 
     @media screen and (min-width: 980px) {
       max-width: 1200px;
-      width: 640px;
+      width: 720px;
       margin: 1.25rem auto 1.75rem;
     }
   }
@@ -229,24 +238,21 @@ footer {
 
     @media screen and (min-width: 980px) {
       max-width: 1200px;
-      width: 640px;
+      width: 720px;
       margin: 1.25rem auto 1.75rem;
     }
   }
 
   blockquote {
-    margin: 0.5rem auto 1rem;
+    margin: 0 auto;
 
     @media screen and (min-width: 980px) {
       max-width: 1200px;
-      width: 640px;
+      width: 720px;
     }
 
     p {
-      font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
-      font-style: italic;
       color: #555;
-      font-size: 1.3rem;
       border-left: 6px solid rgba(35, 158, 76, 0.1);
       padding-left: 1.5rem;
       padding-right: 1rem;
@@ -290,24 +296,22 @@ footer {
   }
 
   figcaption {
+    color: #282828;
     margin-top: 0;
-    border-left: 4px solid #dddddd;
-    padding-left: 2rem;
-    padding-right: 2rem;
 
     p {
-      color: #777;
+      font-size: 1.1rem;
       letter-spacing: -0.02rem;
-      margin: 0 0 0.5rem;
       padding-left: 0;
 
       &.caption {
-        font-family: "PT Sans Caption", sans-serif;
         font-weight: 700;
       }
 
-      &.postdate {
+      &.orig-postdate {
+        color: #444444;
         font-size: 0.88rem;
+        letter-spacing: 0.01rem;
         text-transform: uppercase;
       }
     }
@@ -463,25 +467,21 @@ img {
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 1.2;
       letter-spacing: -0.04rem;
 
       @media screen and (min-width: 768px) {
-        font-size: 2.1rem;
+        font-size: 1.4rem;
       }
     }
 
     .summary {
       p {
         color: #444444;
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin: 0.3rem 0 1rem;
         width: auto;
-
-        @media screen and (min-width: 960px) {
-          font-size: 1.23rem;
-        }
 
         &.fin {
           font-size: 1.5rem;

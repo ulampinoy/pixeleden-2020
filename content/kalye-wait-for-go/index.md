@@ -7,9 +7,12 @@ cover_image = "wait-for-go.jpg"
 alt_text = "A group of women waiting for the go sign to cross the street"
 +++
 
-{{ bannerImage(
-    img="wait-for-go"
-    imgDesc="A group of women waiting for the go sign to cross the street"
-    imgCaption="While waiting for the go"
-    imgDate="06 June 2012"
-)}}
+<div class="bannerImage kalye">
+    <figure>
+        <img src="wait-for-go.jpg" alt="A photograph of a man seated in a Metro train solving a Suduko puzzle on a newspaper.">
+        <figcaption>
+                <p>A group of women waiting for the go sign to cross the street</p>
+                <p class="orig-postdate">06 June 2012</p>
+        </figcaption>
+    </figure>
+</div>
