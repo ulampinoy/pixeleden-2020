@@ -75,7 +75,7 @@ Zola provided some [clear instructions](https://www.getzola.org/documentation/co
 
 And this is how I use the shortcode for the Tumblr repost in Markdown:
 
-```md
+```html.j2
 {{ bannerImage(
     img="wait-for-go"
     imgDesc="A group of women waiting for the go sign to cross the street"

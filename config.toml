@@ -1,8 +1,6 @@
 base_url = "https://pixeleden.com/"
 compile_sass = true
 generate_rss = true
-highlight_code = true
-highlight_theme = "charcoal"
 build_search_index = true
 
 # Used in RSS by default
@@ -14,6 +12,10 @@ default_language = "en"
 
 generate_categories_pages = true
 generate_tags_pages = true
+
+[markdown]
+# When set to "true", all code blocks are highlighted.
+highlight_code = true
 
 [extra]
 # Put all your custom variables here

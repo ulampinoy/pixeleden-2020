@@ -44,6 +44,7 @@
     </header>
 
     {% block content %}
+
     <main class="gridy">
         {% for page in paginator.pages %}
         <div class="post card">
@@ -65,7 +66,7 @@
             </div>
         </div>
         {% endfor %}
-        
+
     </main>
     <nav class="pagination">
             {% if paginator.previous %}
@@ -91,7 +92,7 @@
             <img src="/images/pixeleaf.svg" alt="logo of PixelEden">
         </a>
         <p>
-            &copy; 2020 Pixeleden by
+            &copy; 2002—2023 Pixeleden by
             <a href="https://allanrey.es">Allan Reyes</a>.
             Dispatched from <b>Madrid, Spain.</b> Hosted by <a href="https://netlify.com">Netlify</a>.
 
