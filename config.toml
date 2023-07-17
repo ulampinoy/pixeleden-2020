@@ -1,4 +1,4 @@
-base_url = "/"
+base_url = "https://pixeleden.com/"
 compile_sass = true
 generate_rss = true
 highlight_code = true
@@ -14,3 +14,8 @@ default_language = "en"
 
 generate_categories_pages = true
 generate_tags_pages = true
+
+[extra]
+# Put all your custom variables here
+author = "Allan Reyes"
+github = "https://github.com/ulampinoy"

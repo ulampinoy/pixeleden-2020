@@ -16,18 +16,20 @@ main {
 }
 
 header[role="banner"] {
-  border-bottom: 1px solid #e4e4e4;
   padding: 1.5rem 2rem;
+  max-width: 1120px;
+  margin: 0 auto;
+
 
   .logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+
     img {
       transition: all 0.3s ease-out;
       margin: 0;
-      width: 90%;
-
-      @media screen and (min-width: 768px) {
-        width: 100%;
-      }
 
       &:hover {
         filter: contrast(140%);
@@ -37,8 +39,9 @@ header[role="banner"] {
 
   &.topNav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
   }
 
   nav {
@@ -59,6 +62,9 @@ header[role="banner"] {
 
 nav {
   &.pagination {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
     margin: 3rem auto;
     padding: 2rem 1rem;
     border-top: 1px solid #ddd;
@@ -68,12 +74,27 @@ nav {
       border-top: 0;
     }
 
+    div {
+      display: flex;
+    }
+
     a {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      min-width: 160px;
+      margin-bottom: 0;
       color: white;
-      background-color: #406db6;
+      background-color: #486543;
       font-size: 1.25rem;
       font-weight: 500;
-      padding: 0.75rem;
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        text-decoration: none;
+        background-color: #32462f;
+      }
     }
   }
 }
@@ -85,7 +106,8 @@ footer {
   padding: 4rem 1.5rem;
 
   img {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     opacity: 0.8;
     margin-bottom: 0.5rem;
@@ -159,13 +181,16 @@ footer {
         margin: 3rem auto 1.5rem;
       }
     }
+
     em {
       font-style: italic;
     }
+
     p {
       margin-top: 2rem;
       margin-bottom: 0.5rem;
     }
+
     blockquote p {
       margin: 0;
     }
@@ -320,6 +345,7 @@ footer {
 
   blockquote {
     margin-top: 1rem;
+
     p {
       border-left: 0;
       font-size: 1rem;
@@ -337,6 +363,7 @@ img {
 
   &.east {
     display: block;
+
     @media screen and (min-width: 768px) {
       float: right;
       padding-left: 2rem;
@@ -371,7 +398,7 @@ img {
   margin-bottom: 1rem;
 
   @media screen and (min-width: 768px) {
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
   }
 

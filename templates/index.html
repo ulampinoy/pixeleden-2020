@@ -38,20 +38,13 @@
     <header class="topNav" role="banner">
         <div class="logo">
             <a href="/">
-                <img src="/images/logo-pixeleden.svg" alt="logo of PixelEden">
+                <img src="/images/logo-text-mark-pixeleden.svg" alt="logo of PixelEden">
             </a>
         </div>
-        <nav role="navigation">
-            <ul>
-                <li>
-                    <a href="https://allanrey.es">Portfolio</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     {% block content %}
-    <main>
+    <main class="gridy">
         {% for page in paginator.pages %}
         <div class="post card">
 
@@ -72,21 +65,30 @@
             </div>
         </div>
         {% endfor %}
-        <nav class="pagination">
+        
+    </main>
+    <nav class="pagination">
             {% if paginator.previous %}
-            <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+            <div class="previous">
+                <a href="{{ paginator.previous }}">
+                    <span>&#60;</span> <span>Previous<span>
+                </a>
+            </div>
             {% endif %}
-            {% if paginator.next %}
-            <a class="next" href="{{ paginator.next }}">See more post ›</a>
+            {% if paginator.next  %}
+            <div class="next">
+                <a href="{{ paginator.next }}">
+                    <span>Next</span> <span>&#62;</span>
+                </a>
+            </div>
             {% endif %}
         </nav>
-    </main>
     {% endblock content %}
 
     {% block footer %}
     <footer>
         <a href="/">
-            <img src="/images/logo-pixeleden.svg" alt="logo of PixelEden">
+            <img src="/images/pixeleaf.svg" alt="logo of PixelEden">
         </a>
         <p>
             &copy; 2020 Pixeleden by
@@ -102,3 +104,4 @@
 </body>
 
 </html>
+

@@ -16,7 +16,7 @@ body {
   font-size: 1em;
   font-weight: 400;
   color: #282828;
-  background-color: #f9f9fa;
+  background-color: #F6F3EA;
   line-height: 1.6;
   line-break: strict;
   text-rendering: optimizeLegibility;
@@ -27,7 +27,7 @@ body {
 a {
   color: #4c6ea8;
   text-decoration: none;
-  transition: all 0.3s ease-out;
+  transition: all 0.15s ease-in-out;
 
   &:hover,
   &:focus {
