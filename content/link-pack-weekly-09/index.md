@@ -12,8 +12,8 @@ alt_text = "Photo of butterfly wing and thermal scans indicating temperature dis
 > A new study from Columbia Engineering and Harvard identified the critical physiological importance of suitable temperatures for butterfly wings to function properly, and discovered that the insects exquisitely regulate their wing temperatures through both structural and behavioral adaptations.
 
 {{ wideImage(
-    img="photo-butterfly-wings-temp-distro"
-    imgDesc="Photo of butterfly wing and thermal scans indicating temperature distribution"
+    img="photo-butterfly-wings-temp-distro.jpg"
+    imgDesc="Photo of butterfly wings and thermal scans indicating temperature distribution"
 )}}
 
 > Temperature distributions on the forewing of three species of Eumaeini butterflies illuminated by sunlight, showing that despite the wings' wide variation in visible coloration and pattern, the temperature of the scent patches, pads, and wing veins that contain living cells is always lower than that of the remaining "non-living" parts of the wings. Credit: Nanfang Yu and Cheng-Chia Tsai/Columbia Engineering

@@ -1,15 +1,14 @@
 <div class="bannerImage kalye">
-    <figure>
-        <img
-        src="/images/{{ page.slug }}/{{ img }}.jpg"
-        alt="{% if alt %}{{ imgDesc }}{% endif %}">
-        <figcaption>
-            {% if quote %}
-                <p>
-                    {{ imgQuote }}
-                </p>
-            {% endif %}
-            <p class="orig-postdate">{{ imgDate }}</p>
-        </figcaption>
-    </figure>
+  <figure>
+    <img
+      src="/images/{{ page.slug }}/{{ img }}.jpg"
+      alt="{% if imgDesc %}{{ imgDesc }}{% endif %}"
+    />
+    <figcaption>
+      {% if quote %}
+      <p>{{ imgQuote }}</p>
+      {% endif %}
+      <p class="orig-postdate">{{ imgDate }}</p>
+    </figcaption>
+  </figure>
 </div>

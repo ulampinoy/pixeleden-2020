@@ -1,10 +1,17 @@
 article {
-    &.Post {
-        h3 {
-            font-size: 1.6rem;
-        }
-        p {
-            margin: 1rem auto;
-        }
+  &.Post {
+    h3 {
+      font-size: 1.6rem;
     }
+    p {
+      margin: 1rem auto;
+    }
+  }
+}
+
+.wideImage {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
 }
