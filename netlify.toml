@@ -1,0 +1,9 @@
+[build]
+command = "zola build"
+publish = "public"
+
+[context.production.environment]
+ZOLA_VERSION = "0.19.2"
+
+[context.deploy-preview.environment]
+ZOLA_VERSION = "0.19.2"
