@@ -42,6 +42,6 @@ Bewick's swan migration from Arctic Russia to north-west Europe [^1]
 ![Bracket City logo](bracket_city_emblem.png)
 An exciting way to flex-start your brain. So much fun! Also, there's the Archive to go back to previous puzzles.
 
+---
 [^1]: Source: Guardian News & Media Limited)
-
 [^2]: Photo credits: https://www.nbcnews.com/news/world/mr-doodle-artist-squiggles-black-white-mansion-rcna52453
