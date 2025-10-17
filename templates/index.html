@@ -41,6 +41,12 @@
                 <img src="/images/logo-text-mark-pixeleden.svg" alt="logo of PixelEden">
             </a>
         </div>
+        <nav>
+            <ul>
+                <li><a href="/">Journal</a></li>
+                <li><a href="/photos/">Photography</a></li>
+            </ul>
+        </nav>
     </header>
 
     {% block content %}
@@ -49,10 +55,15 @@
         {% for page in paginator.pages %}
         <div class="post card">
 
-            {% if page.extra.cover_image %}
+            {% set cover = page.extra.cover_image | default(value=page.extra.image) %}
+            {% if cover %}
             <div class="cover">
                 <a href="{{ page.permalink }}">
-                    <img src="/{{ page.slug }}/{{ page.extra.cover_image }}" alt="{{ page.extra.alt_text }}">
+                    {% if page.extra.cover_image %}
+                    <img src="/{{ page.slug }}/{{ page.extra.cover_image }}" alt="{{ page.extra.alt_text | default(value=page.description) | default(value=page.title) }}">
+                    {% else %}
+                    <img src="{{ page.permalink }}{{ page.extra.image }}" alt="{{ page.extra.alt_text | default(value=page.description) | default(value=page.title) }}">
+                    {% endif %}
                 </a>
             </div>
             {% endif %}

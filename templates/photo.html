@@ -1,13 +1,56 @@
-{% extends "photos.html" %}
+{% extends "page.html" %}
+{% block title %}{{config.title}} - {{page.title}}{% endblock title %}
 
-{% block title %}{{ page.title }} | Zola {% endblock title %}
-{% block photo_content %}
-<div class="photo-info">
-    <img src="" class="thumb">
-    <div class="metadata">
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.description }}</p>
+{% block content %}
+    <main>
+
+<article class="post">
+    <header>
+        <div class="post-date">{{ page.date | date(format="%a, %d %b  %Y")  }}</div>
+        <h1 class="post-title">{{ page.title }}</h1>
+
+    </header>
+    <div class="post-content">
+        {% set image = page.extra.image | default(value=page.extra.cover_image) %}
+        <p>
+            <img src="{{ page.permalink }}{{ image }}" alt="{{ page.description | default(value=page.title) }}">
+        </p>
+        {{ page.content | safe }}
+        <p class="fin">&#10046;</p>
     </div>
+
+    {% block page_after_footer %}{% endblock page_after_footer %}
+</article>
+{% block page_before_footer %}{% endblock page_before_footer %}
+
+<div class="post-footer">
+    {% block page_footer %}
+    {% if page.taxonomies.tags %}
+    <div class="post-tags">
+        {% for tag in page.taxonomies.tags %}
+        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">#{{ tag }}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% if page.earlier or page.later or page.lighter or page.heavier %}
+    <div class="post-nav">
+        {% if page.earlier %}
+        <a class="previous" href="{{ page.earlier.permalink }}">‹ {{ page.earlier.title }}</a>
+        {% endif %}
+        {% if page.later %}
+        <a class="next" href="{{ page.later.permalink }}">{{ page.later.title }} ›</a>
+        {% endif %}
+        {% if page.lighter %}
+        <a class="previous" href="{{ page.lighter.permalink }}">‹ {{ page.lighter.title }}</a>
+        {% endif %}
+        {% if page.heavier %}
+        <a class="next" href="{{ page.heavier.permalink }}">{{ page.heavier.title }} ›</a>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {% endblock page_footer %}
+
 </div>
-{{page.content | safe}}
-{% endblock photo_content %}
+</main>
+{% endblock content %}

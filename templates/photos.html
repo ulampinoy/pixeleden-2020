@@ -1,17 +1,21 @@
-{% extends "index.html" %}
-
-{% block content %}
-<div class="container">
-    {% block photo_content %}
-    <h1>Photography</h1>
-    <div class="photos">
-        {% for photo in section.pages %}
-        <a class="photo" href="{{photo.permalink}}">
-            <img src="{{ photo.permalink }}/{{photo.extra.image}}" alt="Screenshot of {{photo.title}}">
-            <h2>{{photo.title}}</h2>
-        </a>
-        {% endfor %}
-    </div>
-    {% endblock photo_content %}
+{% extends "index.html" %} {% block content %}
+<div class="container photos-page">
+  {% block photo_content %}
+  <h1>Photography</h1>
+  <div class="photos masonry" data-columns>
+    {% for photo in paginator.pages %} {% set image = photo.extra.image |
+    default(value=photo.extra.cover_image) %}
+    <article class="masonry-item">
+      <a class="photo" href="{{photo.permalink}}">
+        <img
+          src="{{ photo.permalink }}/{{ image }}"
+          alt="{{ photo.description | default(value=photo.title) }}"
+          loading="lazy"
+        />
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+  {% endblock photo_content %}
 </div>
 {% endblock content %}
