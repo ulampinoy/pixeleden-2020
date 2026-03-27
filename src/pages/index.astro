@@ -1,0 +1,391 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+  <Header />
+
+  <main class="flex-1">
+    <!-- ========== HERO ========== -->
+    <section class="relative overflow-hidden scanlines">
+      <!-- Gradient backdrop inspired by the 2006 nature banner -->
+      <div class="absolute inset-0 bg-gradient-to-br from-eden-green-800 via-eden-green-700 to-eden-green-900"></div>
+      <!-- Botanical overlay pattern -->
+      <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;0.3&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+        <div class="max-w-3xl">
+          <!-- Anniversary badge -->
+          <div class="inline-flex items-center gap-2 mb-6 px-3 py-1.5 bg-eden-leaf/20 border border-eden-leaf/30 rounded-full">
+            <span class="w-2 h-2 bg-eden-leaf rounded-full animate-pulse"></span>
+            <span class="font-mono text-xs text-eden-green-200 tracking-wide">EST. 2006 — 20th Anniversary</span>
+          </div>
+
+          <!-- Main heading with pixel font nod -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
+            A Digital Garden <br class="hidden sm:block" />
+            <span class="text-eden-leaf">& Journal</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-eden-green-200/80 leading-relaxed max-w-2xl mb-8">
+            Design, photography, and musings on the open web — curated by
+            <strong class="text-white font-medium">Allan Reyes</strong> from Madrid, Spain.
+            Two decades of tending this little corner of the internet.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="/journal" class="btn-retro">
+              <span>Read the Journal</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <a href="/photography" class="inline-flex items-center gap-2 px-5 py-2.5 font-mono text-sm text-eden-green-200 border-2 border-eden-green-500/30 hover:border-eden-leaf/50 hover:text-white transition-colors duration-150">
+              View Photography
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pixel-art style bottom edge -->
+      <div class="absolute bottom-0 left-0 right-0 h-4">
+        <svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1200 16">
+          <path d="M0 0h100v4h100V0h100v8h100V4h100v4h100V0h100v8h100V4h100v8h100V0h100v4z" fill="#f6f3ea" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ========== WHAT'S NEW + SIDEBAR (2006 layout homage) ========== -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
+        <!-- Main content: What's New -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-8">
+            <h2 class="font-display text-2xl text-eden-green-700">what's new</h2>
+            <div class="flex-1 h-px bg-eden-green-200"></div>
+            <span class="font-mono text-xs text-pixel-gray-400">latest entries</span>
+          </div>
+
+          <div class="space-y-8">
+            <!-- Entry 1 -->
+            <article class="group card-lift p-6 bg-white/60 border border-eden-green-100 rounded-sm">
+              <div class="flex items-start gap-4">
+                <div class="hidden sm:flex flex-col items-center text-center w-14 shrink-0 pt-1">
+                  <span class="font-display text-2xl text-eden-green-500 leading-none">27</span>
+                  <span class="font-mono text-[10px] uppercase tracking-widest text-pixel-gray-400">Mar</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider bg-eden-leaf/10 text-eden-leaf border border-eden-leaf/20">
+                      photography
+                    </span>
+                    <span class="font-mono text-xs text-pixel-gray-300 sm:hidden">Mar 27, 2026</span>
+                  </div>
+                  <h3 class="font-serif text-xl text-eden-green-700 group-hover:text-eden-green-500 transition-colors mb-2">
+                    <a href="/photography">Best of 2025 — Street Photography Collection</a>
+                  </h3>
+                  <p class="text-sm text-pixel-gray-500 leading-relaxed">
+                    A curated selection of the year's most compelling street captures, from the bustling corners of Madrid to quiet Mediterranean villages.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Entry 2 -->
+            <article class="group card-lift p-6 bg-white/60 border border-eden-green-100 rounded-sm">
+              <div class="flex items-start gap-4">
+                <div class="hidden sm:flex flex-col items-center text-center w-14 shrink-0 pt-1">
+                  <span class="font-display text-2xl text-eden-green-500 leading-none">20</span>
+                  <span class="font-mono text-[10px] uppercase tracking-widest text-pixel-gray-400">Mar</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider bg-eden-green-50 text-eden-green-600 border border-eden-green-100">
+                      journal
+                    </span>
+                    <span class="font-mono text-xs text-pixel-gray-300 sm:hidden">Mar 20, 2026</span>
+                  </div>
+                  <h3 class="font-serif text-xl text-eden-green-700 group-hover:text-eden-green-500 transition-colors mb-2">
+                    <a href="/journal">Link Pack Weekly #10 — Design Tools & Web Standards</a>
+                  </h3>
+                  <p class="text-sm text-pixel-gray-500 leading-relaxed">
+                    A handpicked collection of this week's best reads on design tools, web standards, typography, and the evolving landscape of the open web.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Entry 3 -->
+            <article class="group card-lift p-6 bg-white/60 border border-eden-green-100 rounded-sm">
+              <div class="flex items-start gap-4">
+                <div class="hidden sm:flex flex-col items-center text-center w-14 shrink-0 pt-1">
+                  <span class="font-display text-2xl text-eden-green-500 leading-none">15</span>
+                  <span class="font-mono text-[10px] uppercase tracking-widest text-pixel-gray-400">Mar</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider bg-pixel-gray-100 text-pixel-gray-500 border border-pixel-gray-200">
+                      essay
+                    </span>
+                    <span class="font-mono text-xs text-pixel-gray-300 sm:hidden">Mar 15, 2026</span>
+                  </div>
+                  <h3 class="font-serif text-xl text-eden-green-700 group-hover:text-eden-green-500 transition-colors mb-2">
+                    <a href="/journal">Dormant, Not Extinct — On Long-Running Personal Sites</a>
+                  </h3>
+                  <p class="text-sm text-pixel-gray-500 leading-relaxed">
+                    Reflections on maintaining a personal website for two decades. Why the slow web still matters, and how digital gardens outlast social feeds.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="mt-8 text-center">
+            <a href="/journal" class="inline-flex items-center gap-2 font-mono text-sm text-eden-green-600 hover:text-eden-green-500 transition-colors">
+              <span>View all entries</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sidebar: Featured Projects (2006 callback) -->
+        <aside class="lg:col-span-1">
+          <div class="flex items-center gap-3 mb-8">
+            <h2 class="font-display text-2xl text-eden-green-700">featured</h2>
+            <div class="flex-1 h-px bg-eden-green-200"></div>
+          </div>
+
+          <div class="space-y-6">
+            <!-- 20th Anniversary card -->
+            <div class="p-5 bg-gradient-to-br from-eden-green-700 to-eden-green-800 rounded-sm text-white">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="font-display text-4xl leading-none">20</span>
+                <div class="leading-tight">
+                  <span class="block font-mono text-[10px] uppercase tracking-widest text-eden-green-300">years of</span>
+                  <span class="block font-serif text-lg text-eden-leaf">pixeleden</span>
+                </div>
+              </div>
+              <p class="text-sm text-eden-green-200 leading-relaxed mb-4">
+                From table layouts and Flash to Astro and the modern web — celebrating two decades of design, code, and craft.
+              </p>
+              <div class="font-mono text-[10px] text-eden-green-400">
+                03 Feb 2006 → 03 Feb 2026
+              </div>
+            </div>
+
+            <!-- Retro screenshot -->
+            <div class="group overflow-hidden rounded-sm border border-eden-green-100">
+              <div class="p-3 bg-pixel-gray-100 border-b border-eden-green-100">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-pixel-gray-300"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-pixel-gray-300"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-pixel-gray-300"></span>
+                  <span class="ml-2 font-mono text-[10px] text-pixel-gray-400 truncate">pixeleden.net — Feb 2006</span>
+                </div>
+              </div>
+              <img
+                src="/images/pixeleden-2006-screenshot.png"
+                alt="Pixeleden website as it appeared in February 2006"
+                class="w-full opacity-90 group-hover:opacity-100 transition-opacity"
+                loading="lazy"
+              />
+              <div class="p-3 bg-pixel-gray-100 border-t border-eden-green-100">
+                <p class="font-mono text-[10px] text-pixel-gray-400 text-center">
+                  Where it all began ✦
+                </p>
+              </div>
+            </div>
+
+            <!-- Quick links sidebar -->
+            <div class="p-5 bg-white/60 border border-eden-green-100 rounded-sm">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-eden-green-500 mb-4">Quick Links</h3>
+              <ul class="space-y-3">
+                <li>
+                  <a href="/photography" class="flex items-center gap-3 group/link">
+                    <span class="w-8 h-8 flex items-center justify-center bg-eden-green-50 text-eden-green-600 font-display text-sm">
+                      &#x1F4F7;
+                    </span>
+                    <div>
+                      <span class="text-sm text-eden-green-700 group-hover/link:text-eden-green-500 transition-colors">Photography</span>
+                      <span class="block text-[11px] text-pixel-gray-400">Street &amp; travel</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/journal" class="flex items-center gap-3 group/link">
+                    <span class="w-8 h-8 flex items-center justify-center bg-eden-green-50 text-eden-green-600 font-display text-sm">
+                      &#x270D;
+                    </span>
+                    <div>
+                      <span class="text-sm text-eden-green-700 group-hover/link:text-eden-green-500 transition-colors">Journal</span>
+                      <span class="block text-[11px] text-pixel-gray-400">Thoughts &amp; links</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/about" class="flex items-center gap-3 group/link">
+                    <span class="w-8 h-8 flex items-center justify-center bg-eden-green-50 text-eden-green-600 font-display text-sm">
+                      &#x1F331;
+                    </span>
+                    <div>
+                      <span class="text-sm text-eden-green-700 group-hover/link:text-eden-green-500 transition-colors">About</span>
+                      <span class="block text-[11px] text-pixel-gray-400">The gardener</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ========== RETRO MARQUEE / TECH TICKER ========== -->
+    <section class="border-y border-eden-green-100 bg-eden-green-50/30 overflow-hidden">
+      <div class="relative flex items-center h-12">
+        <div class="animate-marquee flex items-center gap-8 whitespace-nowrap">
+          <span class="font-mono text-xs text-pixel-gray-400">✦ HTML</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ CSS</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ JavaScript</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Astro</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Tailwind</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Netlify</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Photography</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Design</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Open Web</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Digital Garden</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ HTML</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ CSS</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ JavaScript</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Astro</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Tailwind</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Netlify</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Photography</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Design</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Open Web</span>
+          <span class="font-mono text-xs text-pixel-gray-400">✦ Digital Garden</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TIMELINE — 20 YEARS ========== -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <div class="text-center mb-12">
+        <h2 class="font-display text-3xl sm:text-4xl text-eden-green-700 mb-3">20 Years in Pixels</h2>
+        <p class="font-mono text-sm text-pixel-gray-400">A brief timeline of the journey</p>
+      </div>
+
+      <div class="relative">
+        <!-- Vertical line -->
+        <div class="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-eden-green-200 -translate-x-1/2"></div>
+
+        <div class="space-y-12">
+          <!-- 2006 -->
+          <div class="relative flex items-start gap-6 sm:gap-0">
+            <div class="hidden sm:block sm:w-1/2 sm:pr-12 sm:text-right">
+              <div class="font-display text-3xl text-eden-leaf mb-1">2006</div>
+              <h3 class="font-serif text-lg text-eden-green-700 mb-1">The Beginning</h3>
+              <p class="text-sm text-pixel-gray-500">Launched as a portfolio site built with table layouts, inline CSS, and a whole lot of heart. The web was young, and so were we.</p>
+            </div>
+            <div class="relative z-10 w-8 h-8 shrink-0 rounded-full bg-eden-leaf border-4 border-eden-cream flex items-center justify-center sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+              <span class="w-2 h-2 bg-white rounded-full"></span>
+            </div>
+            <div class="sm:w-1/2 sm:pl-12 sm:hidden">
+              <div class="font-display text-3xl text-eden-leaf mb-1">2006</div>
+              <h3 class="font-serif text-lg text-eden-green-700 mb-1">The Beginning</h3>
+              <p class="text-sm text-pixel-gray-500">Launched as a portfolio site built with table layouts, inline CSS, and a whole lot of heart.</p>
+            </div>
+            <div class="hidden sm:block sm:w-1/2 sm:pl-12"></div>
+          </div>
+
+          <!-- 2010 -->
+          <div class="relative flex items-start gap-6 sm:gap-0">
+            <div class="hidden sm:block sm:w-1/2 sm:pr-12"></div>
+            <div class="relative z-10 w-8 h-8 shrink-0 rounded-full bg-eden-green-500 border-4 border-eden-cream flex items-center justify-center sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+              <span class="w-2 h-2 bg-white rounded-full"></span>
+            </div>
+            <div class="sm:w-1/2 sm:pl-12">
+              <div class="font-display text-3xl text-eden-green-500 mb-1">2010s</div>
+              <h3 class="font-serif text-lg text-eden-green-700 mb-1">WordPress & Beyond</h3>
+              <p class="text-sm text-pixel-gray-500">Evolved through WordPress, custom themes, and responsive design. The blog became a digital garden.</p>
+            </div>
+          </div>
+
+          <!-- 2020 -->
+          <div class="relative flex items-start gap-6 sm:gap-0">
+            <div class="hidden sm:block sm:w-1/2 sm:pr-12 sm:text-right">
+              <div class="font-display text-3xl text-eden-green-400 mb-1">2020s</div>
+              <h3 class="font-serif text-lg text-eden-green-700 mb-1">Static Renaissance</h3>
+              <p class="text-sm text-pixel-gray-500">Migrated to static site generators — Hugo, Zola — embracing the JAMstack and the simplicity of pre-rendered pages.</p>
+            </div>
+            <div class="relative z-10 w-8 h-8 shrink-0 rounded-full bg-eden-green-400 border-4 border-eden-cream flex items-center justify-center sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+              <span class="w-2 h-2 bg-white rounded-full"></span>
+            </div>
+            <div class="sm:w-1/2 sm:pl-12 sm:hidden">
+              <div class="font-display text-3xl text-eden-green-400 mb-1">2020s</div>
+              <h3 class="font-serif text-lg text-eden-green-700 mb-1">Static Renaissance</h3>
+              <p class="text-sm text-pixel-gray-500">Migrated to static site generators — Hugo, Zola — embracing the JAMstack.</p>
+            </div>
+            <div class="hidden sm:block sm:w-1/2 sm:pl-12"></div>
+          </div>
+
+          <!-- 2026 -->
+          <div class="relative flex items-start gap-6 sm:gap-0">
+            <div class="hidden sm:block sm:w-1/2 sm:pr-12"></div>
+            <div class="relative z-10 w-8 h-8 shrink-0 rounded-full bg-eden-green-600 border-4 border-eden-cream flex items-center justify-center sm:absolute sm:left-1/2 sm:-translate-x-1/2 ring-4 ring-eden-green-100">
+              <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+            </div>
+            <div class="sm:w-1/2 sm:pl-12">
+              <div class="font-display text-3xl text-eden-green-600 mb-1">2026</div>
+              <h3 class="font-serif text-lg text-eden-green-700 mb-1">20th Anniversary</h3>
+              <p class="text-sm text-pixel-gray-500">Reborn on Astro + Tailwind. A modern web project celebrating its pioneering roots — retro spirit, future-ready craft.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COLOPHON (classic web tradition) ========== -->
+    <section class="border-t border-eden-green-100 bg-white/40">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center max-w-2xl mx-auto">
+          <div class="leaf-divider mb-8">
+            <img src="/images/pixeleaf.svg" alt="" class="w-6 h-6" />
+          </div>
+          <h2 class="font-display text-2xl text-eden-green-700 mb-4">Colophon</h2>
+          <p class="text-sm text-pixel-gray-500 leading-relaxed mb-6">
+            This site is built with <strong class="text-eden-green-600">Astro</strong> and styled with
+            <strong class="text-eden-green-600">Tailwind CSS</strong>. Set in
+            <strong class="text-eden-green-600">Instrument Serif</strong>,
+            <strong class="text-eden-green-600">Inter</strong>, and
+            <strong class="text-eden-green-600">Pixelify Sans</strong>.
+            Deployed on <strong class="text-eden-green-600">Netlify</strong>.
+            Handcrafted with care, as always.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <span class="px-3 py-1 font-mono text-[10px] uppercase tracking-widest bg-eden-green-50 text-eden-green-600 border border-eden-green-100">Astro 5</span>
+            <span class="px-3 py-1 font-mono text-[10px] uppercase tracking-widest bg-eden-green-50 text-eden-green-600 border border-eden-green-100">Tailwind 3</span>
+            <span class="px-3 py-1 font-mono text-[10px] uppercase tracking-widest bg-eden-green-50 text-eden-green-600 border border-eden-green-100">Netlify</span>
+            <span class="px-3 py-1 font-mono text-[10px] uppercase tracking-widest bg-eden-green-50 text-eden-green-600 border border-eden-green-100">MDX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+</style>

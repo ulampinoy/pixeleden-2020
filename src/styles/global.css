@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    @apply bg-eden-green-500/20 text-eden-green-700;
+  }
+
+  /* Pixel grid background pattern */
+  .pixel-grid {
+    background-image:
+      linear-gradient(rgba(72, 101, 67, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(72, 101, 67, 0.03) 1px, transparent 1px);
+    background-size: 8px 8px;
+  }
+
+  /* Retro scanline effect */
+  .scanlines::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.015) 2px,
+      rgba(0, 0, 0, 0.015) 4px
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+@layer components {
+  /* Pixel-style border using box-shadow */
+  .pixel-border {
+    box-shadow:
+      inset -2px -2px 0 0 rgba(72, 101, 67, 0.15),
+      inset 2px 2px 0 0 rgba(255, 255, 255, 0.4);
+  }
+
+  /* Retro button style */
+  .btn-retro {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 font-mono text-sm
+           bg-eden-green-600 text-white border-2 border-eden-green-700
+           hover:bg-eden-green-500 transition-colors duration-150;
+    box-shadow:
+      2px 2px 0 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-retro:active {
+    box-shadow: none;
+    transform: translate(1px, 1px);
+  }
+
+  /* Leaf divider */
+  .leaf-divider {
+    @apply flex items-center gap-4 my-8;
+  }
+
+  .leaf-divider::before,
+  .leaf-divider::after {
+    content: '';
+    @apply flex-1 h-px bg-eden-green-200;
+  }
+
+  /* Card hover lift */
+  .card-lift {
+    @apply transition-all duration-300;
+  }
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(72, 101, 67, 0.1);
+  }
+}

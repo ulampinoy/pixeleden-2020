@@ -1,0 +1,56 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-auto border-t border-eden-green-100 bg-eden-green-50/30">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <img src="/images/pixeleaf.svg" alt="" class="w-6 h-6" />
+          <span class="font-serif text-lg text-eden-green-600">
+            pixel<span class="text-eden-leaf">eden</span>
+          </span>
+        </div>
+        <p class="text-sm text-pixel-gray-400 leading-relaxed">
+          A digital garden & journal of Allan Reyes.<br />
+          Design, photography and the open web.
+        </p>
+      </div>
+
+      <!-- Quick links -->
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest text-eden-green-500 mb-4">Navigate</h4>
+        <ul class="space-y-2">
+          <li><a href="/" class="text-sm text-pixel-gray-500 hover:text-eden-green-600 transition-colors">Home</a></li>
+          <li><a href="/journal" class="text-sm text-pixel-gray-500 hover:text-eden-green-600 transition-colors">Journal</a></li>
+          <li><a href="/photography" class="text-sm text-pixel-gray-500 hover:text-eden-green-600 transition-colors">Photography</a></li>
+          <li><a href="/about" class="text-sm text-pixel-gray-500 hover:text-eden-green-600 transition-colors">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect -->
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest text-eden-green-500 mb-4">Connect</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="https://github.com/ulampinoy" class="text-sm text-pixel-gray-500 hover:text-eden-green-600 transition-colors" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-6 border-t border-eden-green-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-pixel-gray-400 font-mono">
+        &copy; 2006–{year} Allan Reyes. Tended with care since day one.
+      </p>
+      <div class="flex items-center gap-2 text-xs text-pixel-gray-300 font-mono">
+        <span class="inline-block w-2 h-2 bg-eden-leaf rounded-full animate-pulse"></span>
+        <span>20 years of pixels</span>
+      </div>
+    </div>
+  </div>
+</footer>

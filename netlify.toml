@@ -1,9 +1,6 @@
 [build]
-command = "zola build"
-publish = "public"
+command = "npm run build"
+publish = "dist"
 
-[context.production.environment]
-ZOLA_VERSION = "0.19.2"
-
-[context.deploy-preview.environment]
-ZOLA_VERSION = "0.19.2"
+[build.environment]
+NODE_VERSION = "22"

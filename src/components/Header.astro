@@ -1,0 +1,88 @@
+---
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Journal', href: '/journal' },
+  { label: 'Photography', href: '/photography' },
+  { label: 'About', href: '/about' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-eden-cream/90 backdrop-blur-md border-b border-eden-green-100">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-3 group" aria-label="Pixeleden Home">
+      <img
+        src="/images/pixeleaf.svg"
+        alt=""
+        class="w-8 h-8 transition-transform duration-300 group-hover:rotate-12"
+      />
+      <span class="font-serif text-xl text-eden-green-600 tracking-tight">
+        pixel<span class="text-eden-leaf">eden</span>
+      </span>
+    </a>
+
+    <!-- Desktop nav -->
+    <ul class="hidden md:flex items-center gap-1">
+      {navItems.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            class:list={[
+              'px-4 py-2 text-sm font-mono tracking-wide transition-colors duration-150 rounded-sm',
+              currentPath === item.href
+                ? 'text-eden-green-600 bg-eden-green-50'
+                : 'text-pixel-gray-500 hover:text-eden-green-600 hover:bg-eden-green-50/50',
+            ]}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- Mobile menu button -->
+    <button
+      id="mobile-menu-btn"
+      class="md:hidden p-2 text-pixel-gray-500 hover:text-eden-green-600"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+    >
+      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div id="mobile-menu" class="md:hidden hidden border-t border-eden-green-100">
+    <ul class="px-4 py-3 space-y-1">
+      {navItems.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            class:list={[
+              'block px-4 py-2.5 text-sm font-mono tracking-wide rounded-sm transition-colors',
+              currentPath === item.href
+                ? 'text-eden-green-600 bg-eden-green-50'
+                : 'text-pixel-gray-500 hover:text-eden-green-600 hover:bg-eden-green-50/50',
+            ]}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    menu?.classList.toggle('hidden');
+  });
+</script>
