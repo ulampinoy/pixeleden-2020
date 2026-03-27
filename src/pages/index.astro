@@ -2,58 +2,47 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+// Figma design assets
+const mastHeadImage = "http://localhost:3845/assets/a365be69c0c3e127cf6ea81d8f4fb32bf28d4635.png";
 ---
 
 <BaseLayout>
-  <Header />
-
   <main class="flex-1">
     <!-- ========== HERO ========== -->
-    <section class="relative overflow-hidden scanlines">
-      <!-- Gradient backdrop inspired by the 2006 nature banner -->
-      <div class="absolute inset-0 bg-gradient-to-br from-eden-green-800 via-eden-green-700 to-eden-green-900"></div>
-      <!-- Botanical overlay pattern -->
-      <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;0.3&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    <section class="relative overflow-hidden rounded-bl-[48px] rounded-tr-[48px] bg-white h-screen-[80dvh]">
+      <!-- Background image -->
+      <div class="absolute inset-0">
+        <img
+          src={mastHeadImage}
+          alt="Pixeleden botanical masthead"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
 
-      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+      <!-- Hero Navigation (overlaid) -->
+      <Header isHero={true} />
+
+      <!-- Hero content -->
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-56 pb-20 sm:pb-28 lg:pb-36">
         <div class="max-w-3xl">
           <!-- Anniversary badge -->
-          <div class="inline-flex items-center gap-2 mb-6 px-3 py-1.5 bg-eden-leaf/20 border border-eden-leaf/30 rounded-full">
+          <div class="inline-flex items-center gap-2 mb-6 px-3 py-1.5 bg-eden-leaf/40 border border-eden-leaf/30 rounded-full">
             <span class="w-2 h-2 bg-eden-leaf rounded-full animate-pulse"></span>
-            <span class="font-mono text-xs text-eden-green-200 tracking-wide">EST. 2006 — 20th Anniversary</span>
+            <span class="font-mono text-xs text-eden-green-100 tracking-wide">EST. 2006 — 20th Anniversary</span>
           </div>
 
           <!-- Main heading with pixel font nod -->
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-            A Digital Garden <br class="hidden sm:block" />
-            <span class="text-eden-leaf">& Journal</span>
+          <h1 class="text-5xl sm:text-5xl lg:text-7xl text-green-50/90 leading-tight mb-6">
+            A Digital Garden 
           </h1>
 
-          <p class="text-lg sm:text-xl text-eden-green-200/80 leading-relaxed max-w-2xl mb-8">
-            Design, photography, and musings on the open web — curated by
+          <p class="text-lg sm:text-2xl text-white leading-relaxed max-w-2xl mb-8">
+            Design, photography, and musings on the open web — cultivated by
             <strong class="text-white font-medium">Allan Reyes</strong> from Madrid, Spain.
             Two decades of tending this little corner of the internet.
           </p>
-
-          <div class="flex flex-wrap gap-4">
-            <a href="/journal" class="btn-retro">
-              <span>Read the Journal</span>
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </a>
-            <a href="/photography" class="inline-flex items-center gap-2 px-5 py-2.5 font-mono text-sm text-eden-green-200 border-2 border-eden-green-500/30 hover:border-eden-leaf/50 hover:text-white transition-colors duration-150">
-              View Photography
-            </a>
-          </div>
         </div>
-      </div>
-
-      <!-- Pixel-art style bottom edge -->
-      <div class="absolute bottom-0 left-0 right-0 h-4">
-        <svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1200 16">
-          <path d="M0 0h100v4h100V0h100v8h100V4h100v4h100V0h100v8h100V4h100v8h100V0h100v4z" fill="#f6f3ea" />
-        </svg>
       </div>
     </section>
 

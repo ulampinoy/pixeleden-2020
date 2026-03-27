@@ -37,8 +37,8 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+        sans: ['"Noto Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['"Noto Sans"', 'Georgia', 'serif'],
         mono: ['"JetBrains Mono"', 'Menlo', 'monospace'],
         display: ['"Pixelify Sans"', 'system-ui', 'sans-serif'],
       },
