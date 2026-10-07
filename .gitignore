@@ -1,18 +1,4 @@
-# Dependencies
-node_modules/
-
-# Build output
-dist/
-
-# Astro
-.astro/
-
-# OS
 .DS_Store
-
-# IDE
-.vscode/
+/public
+.netlify
 .obsidian
-
-# Netlify
-.netlify/
