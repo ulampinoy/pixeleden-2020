@@ -55,8 +55,7 @@
         {% for page in paginator.pages %}
         <div class="post card">
 
-            {% set cover = page.extra.cover_image | default(value=page.extra.image) %}
-            {% if cover %}
+            {% if page.extra.cover_image or page.extra.image %}
             <div class="cover">
                 <a href="{{ page.permalink }}">
                     {% if page.extra.cover_image %}

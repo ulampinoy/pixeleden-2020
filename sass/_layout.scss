@@ -221,6 +221,58 @@ footer {
       }
     }
 
+    h3 {
+      margin: 2.5rem 2rem 0.75rem;
+      width: auto;
+
+      @media screen and (min-width: 768px) {
+        margin: 2.5rem 4rem 0.75rem;
+      }
+
+      @media screen and (min-width: 980px) {
+        max-width: 1200px;
+        width: 720px;
+        margin: 2.5rem auto 0.75rem;
+      }
+    }
+
+    table {
+      display: block;
+      overflow-x: auto;
+      border-collapse: collapse;
+      font-size: 1rem;
+      margin: 1.25rem 2rem 1.75rem;
+      width: auto;
+
+      @media screen and (min-width: 768px) {
+        margin: 1.25rem 4rem 1.75rem;
+      }
+
+      @media screen and (min-width: 980px) {
+        max-width: 1200px;
+        width: 720px;
+        margin: 1.25rem auto 1.75rem;
+      }
+
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 0.6rem 1rem 0.6rem 0;
+        border-bottom: 1px solid #e0dccf;
+      }
+
+      th {
+        font-weight: 700;
+        border-bottom: 2px solid #282828;
+      }
+
+      td:first-child {
+        white-space: nowrap;
+        font-weight: 500;
+      }
+    }
+
     em {
       font-style: italic;
     }
@@ -376,6 +428,34 @@ footer {
 
   &.kalye {
     margin-bottom: 3rem;
+  }
+
+  &.portrait {
+    margin: 2.5rem 2rem 3rem;
+
+    @media screen and (min-width: 768px) {
+      margin: 2.5rem 4rem 3rem;
+    }
+
+    @media screen and (min-width: 980px) {
+      max-width: 720px;
+      margin: 2.5rem auto 3rem;
+    }
+
+    img {
+      display: block;
+      max-height: 90vh;
+      object-fit: cover;
+      margin-top: 0;
+    }
+
+    figcaption p {
+      margin: 0.75rem 0 0;
+      width: auto;
+      color: #555555;
+      font-size: 1rem;
+      font-style: italic;
+    }
   }
 
   img {
